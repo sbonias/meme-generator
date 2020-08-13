@@ -113,3 +113,11 @@ Open questions (decision time)
   -MemeMeta.js
   -Nav.js
 
+GIT COMMIT -------------------------------------
+
+# Import Bootstrap
+- import bootstrap
+- run npm install bootstrap
+- import bootstrap in src/index.js file
+
+# Start Building Out Our App
