@@ -34,7 +34,11 @@ export default function ImageGallery(props) {
   return (
     <>
       {memes.map((image) => (
-        <MemeImage image={image} />
+        <MemeImage
+          setState={props.setState}
+          state={props.state}
+          image={image}
+        />
       ))}
     </>
   );
