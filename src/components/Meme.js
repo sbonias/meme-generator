@@ -12,15 +12,18 @@ export default function Meme(props) {
     width: '100%',
   };
 
+  // the && is a conditional to display some image if no image exists or vice-versa
   return (
     <>
       <div>
-        {props.state.currentImage && (
+        {props.state.currentImage ? (
           <img
             style={imageStyle}
             src={`/images/${props.state.currentImage.file}`}
             alt={props.state.currentImage.name}
           />
+        ) : (
+          <p>Click on an image to the right to select a background.</p>
         )}
       </div>
     </>

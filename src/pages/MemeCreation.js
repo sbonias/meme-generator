@@ -24,7 +24,7 @@ export default function MemeCreation() {
       <div className="row">
         <div className="col-8">
           <Meme state={state} />
-          <MemeForm />
+          <MemeForm state={state} setState={setState} />
         </div>
         <div className="col-4">
           <ImageGallery state={state} setState={setState} />
